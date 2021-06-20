@@ -1,7 +1,7 @@
 import cv2
 import pandas as pd
 
-img_path = r'C:\Users\akmil\Desktop\tsf\colorpic.jpg'
+img_path = r'C:\Users\akmil\Desktop\TSF\colorpic.jpg'
 img = cv2.imread(img_path)
 
 
@@ -11,7 +11,7 @@ r = g = b = x_pos = y_pos = 0
 
 # Reading csv file with pandas and giving names to each column
 index = ["color", "color_name", "hex", "R", "G", "B"]
-csv = pd.read_csv('C:\\Users\\akmil\\Desktop\\tsf\\colors.csv' , names=index, header=None)
+csv = pd.read_csv('C:\\Users\\akmil\\Desktop\\TSF\\colors.csv' , names=index, header=None)
 
 
 # function to calculate minimum distance from all colors and get the most matching color
